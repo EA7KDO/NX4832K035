@@ -28,7 +28,7 @@ else
         sudo mount -o remount,rw /
         #Check to make sure that NO TFT file exists at the destination
         rm /usr/local/etc/$model$tft
-        cp /tmp/Nextion.Images/$model$tft /usr/local/etc/$model$tft;
+        cp /home/pi-star/Nextion_Temp/$model$tft /usr/local/etc/$model$tft;
         status=$?
         if test $status -eq 0
         then

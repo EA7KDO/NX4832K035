@@ -28,5 +28,5 @@ echo "Check to see if ipv4.fw file was copied to /root"
 sudo ls -l --color /root/ipv4.fw | grep --color "ipv4.fw"
 echo
 echo
-echo "See if Nextion.Images existes, it will be deleted from tmp after a re-boot"
-sudo ls -l --color /tmp/Nextion.Images
+echo "See if Nextion_Temp exists"
+sudo ls -l --color /home/pi-star/Nextion_Temp

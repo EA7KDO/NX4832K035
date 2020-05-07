@@ -52,10 +52,10 @@ fi
 
 if [ "$1" = 8 ]; then
 sudo rm /usr/local/etc/Nextion_Support/ColorTheme.txt
-sudo echo "Custom8" >> /usr/local/etc/Nextion_Support/ColorTheme.tx
+sudo echo "Custom8" >> /usr/local/etc/Nextion_Support/ColorTheme.txt
 fi
 
 if [ "$1" = 9 ]; then
 sudo rm /usr/local/etc/Nextion_Support/ColorTheme.txt
-sudo echo "Custom9" >> /usr/local/etc/Nextion_Support/ColorTheme.tx
+sudo echo "Custom9" >> /usr/local/etc/Nextion_Support/ColorTheme.txt
 fi

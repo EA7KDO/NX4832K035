@@ -15,7 +15,7 @@ tft='.tft' gz='.gz'
 sudo mount -o remount,rw /
 sleep 1s
 #Check to make sure that NO TFT file exists at the destination
-sudo rm /usr/local/etc/$model$tft
+sudo rm -f /usr/local/etc/$model$tft
 sudo cp /home/pi-star/Nextion_Temp/$model$tft /usr/local/etc/$model$tft;
 status=$?
 
@@ -27,8 +27,8 @@ else
         #Put Pi-Star file system in RW mode
         sudo mount -o remount,rw /
         #Check to make sure that NO TFT file exists at the destination
-        rm /usr/local/etc/$model$tft
-        cp /home/pi-star/Nextion_Temp/$model$tft /usr/local/etc/$model$tft;
+        sudo rm -f /usr/local/etc/$model$tft
+        sudo cp /home/pi-star/Nextion_Temp/$model$tft /usr/local/etc/$model$tft;
         status=$?
         if test $status -eq 0
         then

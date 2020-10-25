@@ -17,5 +17,5 @@ fi
 
 ID=`sudo cat /etc/mmdvmhost | grep "\[DMR\]" -A 14 | grep "Id=" | cut -b 4-14`
 curl -s http://tgif.network:5040/api/sessions/update/$ID/$TS/$TG
-## To check arquments being passed to command take off the ## in front of echo below
-echo curl -s http://tgif.network:5040/api/sessions/update/$ID/$TS/$TG
+## To check arquments being passed to the API command take off the ## in front of echo below
+## echo curl -s http://tgif.network:5040/api/sessions/update/$ID/$TS/$TG

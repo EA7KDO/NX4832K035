@@ -15,7 +15,7 @@ if [ -z "$1" ]; then
          exit
 fi
 
-NAME=$(cat /usr/local/etc/stripped.csv | grep -w -F $1 | head -1 | awk -F, '{print $3}')
+#NAME=$(cat /usr/local/etc/stripped.csv | grep -w -F $1 | head -1 | awk -F, '{print $3}')
 
 #mt=$(sudo sed -n '/'"$1"'/p' /usr/local/etc/stripped.csv | head -1 | cut -d',' -f1)
 mt=$(sudo sed -n '/'"$1"'/p' /usr/local/etc/stripped.csv | head -1)
@@ -24,8 +24,6 @@ if [ -z "$mt" ]; then
    exit
 fi
 
-
-#Id=$(sudo sed -n '/'"$1"'/p' /usr/local/etc/stripped.csv | head -1 | cut -d',' -f1)
 Id=$(echo "$mt" | cut -d',' -f1)
 Call=$(echo "$mt" | cut -d',' -f2)
 Name1=$(echo "$mt" | cut -d',' -f3)
@@ -34,16 +32,6 @@ City=$(echo "$mt" | cut -d',' -f5)
 State=$(echo "$mt" | cut -d',' -f6)
 Country=$(echo "$mt" | cut -d',' -f7)
 
-#echo "ID=$Id"
-#echo "Call=$Call"
-#echo "Name1=$Name1"
-#echo "Name1=$Name2"
-#echo "Name2=$City"
-#echo "State=$State"
-#echo "Country=$Country"
-
-
-#select fld in 1 2 3 4 5 6 7 34 567
 case "$2" in
 "1")
 echo "$Id"
@@ -72,6 +60,5 @@ echo "$Name1 $Name2"
 567)
 echo "$City $State $Country"
 ;;
-
 esac
-#done
+

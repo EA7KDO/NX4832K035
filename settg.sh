@@ -1,7 +1,7 @@
 #!/bin/bash
 #########################################################
-#  Nextion Support for Nextion screen. Used to dump     #
-#  current TG and change to TG4000                      #
+#  Nextion Support for Nextion screen. Used to set      #
+#  current TG to TG passed in $1 using tgif API         #
 #                                                       #
 #  KF6S                                     10-25-2020  #
 #########################################################

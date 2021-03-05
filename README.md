@@ -1,5 +1,8 @@
 # NX4832K035
 
+SPECIAL NOTE: After installing the latest 3.5” screen image you will need to re-type in any Password and Port information you may have stored in your six Profiles on the Profile screen.  The password field was lengthened by one character to accommodate the TGIF Prime password and this reduced the length of the port field by one character.
+END SPECIAL NOTE.
+
 If you have an older 3.5” hotspot that is working normally, and you have not kept up with the frequent screen updates you can use this manual procedure to get caught up. If you have tried to update to the latest screen using the normal Git, Copy & Flash procedure on the Flash screen and the attempt was unsuccessful then you can run the following commands using SSH on the Pi to update to the latest screen image:
 
 rpi-rw

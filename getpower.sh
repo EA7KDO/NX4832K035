@@ -40,7 +40,7 @@ if [ $roption == $"P" ]; then
         fi
 
         if (( ($hex & 0x10000) == 0x10000 ))
-        then echo "Arm frquency capped has occurred"
+        then echo "Arm frequency capped has occurred"
         fi
 
         if (( ($hex & 0x20000) == 0x20000 ))

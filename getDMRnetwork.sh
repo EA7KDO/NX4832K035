@@ -10,4 +10,5 @@
 set -o errexit
 set -o pipefail
 
-sudo cat /etc/mmdvmhost | grep "\[DMR Network\]" -A 2 | grep "Address=" | cut -b 9-59
+sudo cat /etc/mmdvmhost | grep "\[DMR Network\]" -A 7 | grep "Address=" | cut -b 9-59
+

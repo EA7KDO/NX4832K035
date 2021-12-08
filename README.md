@@ -7,6 +7,7 @@ If you have an older 3.5” hotspot that is working normally, and you have not k
 
 rpi-rw
 
+
 sudo rm -f /usr/local/etc/NX4832K035.tft
 
 sudo rm -r -f /home/pi-star/Nextion_Temp

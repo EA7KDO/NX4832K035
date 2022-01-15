@@ -22,13 +22,15 @@ call="$1"
 mt=$(sudo sed -n '/'."$call",'/p' /usr/local/etc/stripped.csv | head -n 1)
 
 if [ -z "$mt" ]; then
-        mt=$(sudo sed -n '/'"$call",'/p' /usr/local/etc/stripped2.csv | head -1)
- 
-       if [ -z "$mt" ]; then
-                echo "Not Found"
-                exit
+        if [ -f /usr/local/etc/stripped2.csv ]; then
+                mt=$(sudo sed -n '/'"$call",'/p' /usr/local/etc/stripped2.csv | head -1)
+                if [ -z "$mt" ]; then
+                        echo "Not Found"
+                        exit
+                fi
         fi
 fi
+
 
 Id=$(echo "$mt" | cut -d ',' -f 1)
 Call=$(echo "$mt" | cut -d ',' -f 2)

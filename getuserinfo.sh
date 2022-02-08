@@ -19,7 +19,7 @@ call="$1"
 #NAME=$(cat /usr/local/etc/stripped.csv | grep -w -F $1 | head -1 | awk -F, '{print $3}')
 
 #mt=$(sudo sed -n '/'"$1"'/p' /usr/local/etc/stripped.csv | head -1 | cut -d',' -f1)
-mt=$(sudo sed -n '/'."$call",'/p' /usr/local/etc/stripped.csv | head -n 1)
+mt=$(sudo sed -n '/'"$call"'/p' /usr/local/etc/stripped.csv | head -n 1)
 
 if [ -z "$mt" ]; then
         if [ -f /usr/local/etc/stripped2.csv ]; then

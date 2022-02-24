@@ -18,7 +18,7 @@ fi
 call1="$1"
 
 call=$(echo "$call1" | cut -d "/" -f 1 | cut -d "-" -f1 )
-echo "Call = $call"
+#echo "Call = $call"
 
 #NAME=$(cat /usr/local/etc/stripped.csv | grep -w -F $1 | head -1 | awk -F, '{print $3}')
 
